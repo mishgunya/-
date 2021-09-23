@@ -19,7 +19,8 @@ namespace ConsoleApp1
             if (m2 > 60)
             {
                 int h3 = h2 + 1;
-                Console.Write("Вам нужно завести будильник на " + h3 + "часов и" + m2 + " минут");
+                int m3 = m2 % 60;
+                Console.Write("Вам нужно завести будильник на " + h3 + "часов и " + m3 + " минут");
                 Console.ReadKey();
             }
             else
